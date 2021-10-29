@@ -1,0 +1,44 @@
+html{
+    height: 100%;
+    width: 100%;
+}
+body{
+    height: 100vh;
+    width: 100%;
+}
+#main_Container{
+    height: 100%;
+    width: 100%;
+}
+#logo{
+    height: 60px;
+    width: 60px;
+}
+#delhi{
+    height: 150px;
+    width: 150px;
+}
+#goa{
+    height: 150px;
+    width: 150px;
+}
+#hyderabad{
+    height: 150px;
+    width: 150px;
+}
+#kolkata{
+    height: 150px;
+    width: 150px;
+}
+#fb{
+    height: 20px;
+    width: 22px;
+}
+#insta{
+    height: 20px;
+    width: 22px;
+}
+#twitter{
+    height: 20px;
+    width: 22px;
+}
