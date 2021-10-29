@@ -1,10 +1,34 @@
 html{
     height: 100%;
     width: 100%;
+    margin: 0;
+}
+header{
+    background-color: rosybrown;
 }
 body{
-    min-height: 100vh;
-    min-width: 100%;
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    background-color: #e0e0e0;
+}
+footer{
+    background-color: rosybrown;
+}
+#list_view{
+    margin: 2%;
+    width: 40%;
+    background-color: rgb(132, 136, 139);
+}
+#lalit_div{
+    margin: 2%;
+    width: 40%;
+    background-color: rgb(132, 136, 139);
+}
+#taj_div{
+    margin: 2%;
+    width: 40%;
+    background-color: rgb(132, 136, 139);
 }
 #main_Container{
     height: 100%;
