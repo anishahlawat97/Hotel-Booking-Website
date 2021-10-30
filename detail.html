@@ -6,18 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Detail</title>
     <link rel="stylesheet" href="styles/detail.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div>
+    <div id="main_Container">
         <header>
-            <a href="index.html"><img id="logo" src="assests\images\logo.png" height="100px" width="150px" alt="logo"></a>
+            <a href="index.html"><img id="logo" src="assests\images\logo.png" alt="logo"></a>
             <nav>
-                <a href="login.html">Login</a>
+                <a id="nav_link" href="login.html">Login</a>
             </nav>
         </header>
         <section>
-            <div id="main_Container">
-                <img id="radisson" src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" height="500px" width=" 900px" alt="Radisson Blu Hotel">
+            <div>
+                <img id="radisson" src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="Radisson Blu Hotel">
                 <br>
                 <form id="form_div" action="payment.html">
                     <div>
@@ -57,16 +58,18 @@
                     <li>Pool</li>
                 </ul>
                 <h5>DESCRIPTION</h5>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad laudantium odio provident? Quidem ducimus eius optio fugit, laudantium voluptas distinctio blanditiis deleniti accusantium, sequi nam vitae iste nesciunt earum! Corrupti.</p>
+                <p style="padding-bottom: 5%;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad laudantium odio provident? Quidem ducimus eius optio fugit, laudantium voluptas distinctio blanditiis deleniti accusantium, sequi nam vitae iste nesciunt earum! Corrupti.</p>
                 </div>
             </div>
         </section>
-        <footer><a href="contact.html"><u>Contact Us</u></a>
+        <footer><a id="contact" href="contact.html">Contact Us</a>
             <br>
-            <a href="https:/www.facebook.com" target="_blank"><img id="fb" src="assests\images\facebook.png" alt="Facebook"></a>
-            <a href="https:/www.instagram.com" target="_blank"><img id="insta" src="assests\images\instagram.png" alt="Instagram"></a>
-            <a href="https:/www.twitter.com" target="_blank"><img id="twitter" src="assests\images\twitter.png" alt="Twitter"></a>
-            <div>C 2020 ROOM SEARCH PVT. LTD.</div>
+            <div id="social">
+                <a href="https:/www.facebook.com" target="_blank"><img id="fb" src="assests\images\facebook.png" alt="Facebook"></a>
+                <a href="https:/www.instagram.com" target="_blank"><img id="insta" src="assests\images\instagram.png" alt="Instagram"></a>
+                <a href="https:/www.twitter.com" target="_blank"><img id="twitter" src="assests\images\twitter.png" alt="Twitter"></a>
+            </div>
+            <div id="copyright">&copy; 2020 ROOM SEARCH PVT. LTD.</div>
         </footer>
     </div>    
 </body>

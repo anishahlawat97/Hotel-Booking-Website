@@ -5,7 +5,21 @@ html{
 }
 
 header{
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    top: 0;
     background-color: rosybrown;
+}
+
+nav{
+    position: fixed;
+    right: 10px;
+    top: 20px;
+}
+#nav_link{
+    text-decoration: none;
+    color: black;
 }
 
 body{
@@ -13,15 +27,21 @@ body{
     width: 100%;
     margin: 0;
     background-color: #e0e0e0;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 footer{
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;    
     background-color: rosybrown;
 }
 
 #main_Container{
     height: 100%;
     width: 100%;
+    margin-top: 6%;
 }
 
 #hotel_div{
@@ -32,6 +52,7 @@ footer{
     margin-top: 2%;
     margin-bottom: 2%;    
 }
+
 #info_div{
     margin: 2%;
 }
@@ -41,26 +62,45 @@ footer{
     border: 1px solid black;
     border-radius: 5px;
     padding: 1% 2% 1% 2%;
-}
-    
+}    
 
 #logo{
     height: 60px;
     width: 60px;
 }
+
 #radisson{
     height: 500px;
     width: 500px;
 }
-#fb{
+
+#pay{
+    padding-bottom: 5%;
+    text-decoration: none; 
+    color: black
+}
+
+#fb, #insta, #twitter{
     height: 20px;
     width: 22px;
 }
-#insta{
-    height: 20px;
-    width: 22px;
+
+#contact{
+    text-decoration: none;
+    color: black;
+    position: fixed;
+    bottom: 20px;
+    left: 10px;
 }
-#twitter{
-    height: 20px;
-    width: 22px;
+#copyright{
+    position: fixed;
+    bottom: 5px;
+    left: 45%;
+    font-size: 10px;
+    color: black;
+}
+#social{
+    position: fixed;
+    right: 10px;
+    bottom: 15px;
 }

@@ -4,21 +4,44 @@ html{
     margin: 0;
 }
 header{
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    top: 0;
     background-color: rosybrown;
+}
+
+nav{
+    position: fixed;
+    right: 10px;
+    top: 20px;
+}
+#nav_link{
+    text-decoration: none;
+    color: black;
+}
+
+#main_Container{
+    height: 100%;
+    width: 100%;
+    margin-top: 4%;
+    margin-bottom: 4%;
 }
 body{
     height: 100vh;
     width: 100%;
     margin: 0;
     background-color: #e0e0e0;
+    font-family: 'Ubuntu', sans-serif;
 }
 footer{
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;    
     background-color: rosybrown;
 }
-#main_Container{
-    height: 100%;
-    width: 100%;
-}
+
 #logo{
     height: 60px;
     width: 60px;
@@ -38,15 +61,27 @@ footer{
 #info_div{
     margin: 1% 4% 2% 4%;
 }
-#fb{
+#fb, #insta, #twitter{
     height: 20px;
     width: 22px;
 }
-#insta{
-    height: 20px;
-    width: 22px;
+
+#contact{
+    text-decoration: none;
+    color: black;
+    position: fixed;
+    bottom: 20px;
+    left: 10px;
 }
-#twitter{
-    height: 20px;
-    width: 22px;
+#copyright{
+    position: fixed;
+    bottom: 5px;
+    left: 45%;
+    font-size: 10px;
+    color: black;
+}
+#social{
+    position: fixed;
+    right: 10px;
+    bottom: 15px;
 }
