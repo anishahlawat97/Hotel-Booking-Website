@@ -4,8 +4,9 @@ html{
     margin: 0;
 }
 header{
+    display: flex;
+    flex-direction: column;
     width: 100%;
-    height: 60px;
     position: fixed;
     top: 0;
     background-color: rosybrown;
@@ -14,6 +15,7 @@ nav{
     position: fixed;
     right: 10px;
     top: 20px;
+    margin-right: 1%;
 }
 .nav_link{
     text-decoration: none;
@@ -27,6 +29,7 @@ body{
     background-color: #e0e0e0;
     font-family: 'Ubuntu', sans-serif;
 }
+
 
 ul{
     list-style: none;
@@ -46,6 +49,8 @@ li{
 
 
 footer{
+    display: flex;
+    flex-direction: row;
     height: 60px;
     width: 100%;
     position: fixed;
@@ -53,15 +58,23 @@ footer{
     background-color: rosybrown;
 }
 
+#info{    
+    float: left;  
+    margin-left: 2%; 
+}
+
 #list_view, #lalit_div, #taj_div{
+    text-decoration: none;
     margin: 3% 4%;
     width: 40%;
     margin-bottom: 4%;
-    background-color: rgb(132, 136, 139);
+    background-color: lightgray;
     display: inline-block;
     max-width: 100%;
     color: black;    
 }
+
+
 
 #map_view{
     display: none;
@@ -77,10 +90,12 @@ footer{
     width: 100%;
 }
 #logo{
+    margin-left: 1%;
     height: 60px;
     width: 60px;
 }
 #radisson, #lalit, #taj{
+    float: left;
     height: 200px;
     width: 250px;
 }
@@ -90,20 +105,28 @@ footer{
 }
 
 #contact{
+    display: flex; 
+    flex-direction: row;   
+    justify-content: flex-start;    
+    align-content: center;
+    align-items: center;
     text-decoration: none;
     color: black;
-    position: fixed;
-    bottom: 20px;
-    left: 10px;
+    margin-left: 1%;
+    
+   
 }
 #copyright{
-    position: fixed;
-    bottom: 5px;
-    left: 45%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
     font-size: 10px;
     color: black;
 }
 #social{
+    margin-right: 1%;
     position: fixed;
     right: 10px;
     bottom: 15px;
