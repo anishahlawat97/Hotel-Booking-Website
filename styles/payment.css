@@ -15,12 +15,58 @@ header{
 
 nav{
     position: fixed;
-    right: 10px;
-    top: 20px;
+    right: 1%;    
+    margin-bottom: 2%;
 }
 #nav_link{
     text-decoration: none;
     color: black;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    
+}
+.form_grp{
+    display: flex;
+    flex-direction: row;    
+    justify-content: flex-start;
+    align-items: center;
+      
+}
+.modal-footer1{
+    display: flex;
+    justify-content: center;
+    align-content: center; 
+    align-items: center;
+}
+.modal-footer2{
+    display: flex;    
+    justify-content: flex-end;
+    align-content: flex-end;
+}
+
+label, input{
+    margin-bottom: 3%;
+}
+#submit_button{
+    width: 20%;
+}
+#login_button{      
+    width: 20%;
+}
+label{
+    margin-right: 5%;
+}
+    
+form input{
+    
+    width: 70%;
+}
+button{
+    margin: 10px;    
 }
 
 body{
@@ -52,8 +98,7 @@ section{
 }
 
 #hotel_div{
-    /* display: flex;
-    flex-direction: row; */
+    
     height: 20%;
     width: 50%;
     margin: 0 auto;
@@ -109,18 +154,6 @@ article{
     width: 22px;
 }
 
-#contact{
-    display: flex; 
-    flex-direction: row;   
-    justify-content: flex-start;    
-    align-content: center;
-    align-items: center;
-    text-decoration: none;
-    color: black;
-    margin-left: 1%;
-    
-   
-}
 #copyright{
     position: absolute;
     top: 50%;

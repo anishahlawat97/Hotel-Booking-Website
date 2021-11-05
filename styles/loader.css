@@ -1,17 +1,29 @@
 body{
-    height: 100%;
+    height: 100vh;
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
 }
-#loader{
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+.loader{
+    position: relative;   
     height: 70px;
     width: 70px;
     border: 12px solid #f3f3f3;
     border-radius: 50%;
-    border-top: 12px solid #444444;     
+    border-top: 12px solid #444444; 
+    animation-name: rotate-loader;
+    animation-iteration-count: infinite;
+    animation-duration: .75s;
+    animation-timing-function: linear;
 }
+  
+  @keyframes rotate-loader {
+    from {
+      transform: rotate(0);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }

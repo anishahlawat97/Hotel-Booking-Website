@@ -3,6 +3,18 @@ html{
     width: 100%;
     margin: 0;
 }
+*{
+    font-family: 'Ubuntu', sans-serif;
+    box-sizing: content-box;
+}
+
+h3{
+    font-size: 18.75px;
+}
+
+p{
+    font-size: 16px;
+}
 header{
     display: flex;
     flex-direction: column;
@@ -13,13 +25,63 @@ header{
 }
 nav{
     position: fixed;
-    right: 10px;
-    top: 20px;
-    margin-right: 1%;
+    right: 1%;
+    
+    margin-bottom: 2%;
 }
-.nav_link{
+.nav_link1{
     text-decoration: none;
     color: black;
+}
+.nav_link1:hover{
+    color: black;
+}
+
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    
+}
+.form_grp{
+    display: flex;
+    flex-direction: row;    
+    justify-content: flex-start;
+    align-items: center;
+      
+}
+.modal-footer1{
+    display: flex;
+    justify-content: center;
+    align-content: center; 
+    align-items: center;
+}
+.modal-footer2{
+    display: flex;    
+    justify-content: flex-end;
+    align-content: flex-end;
+}
+
+label, input{
+    margin-bottom: 3%;
+}
+#submit_button{
+    width: 20%;
+}
+#login_button{      
+    width: 20%;
+}
+label{
+    margin-right: 5%;
+}
+    
+form input{
+    
+    width: 70%;
+}
+button{
+    margin: 10px;    
 }
 
 body{
@@ -36,6 +98,7 @@ ul{
     width: 250px;
     margin: 0 auto;
 }
+
 .views{
     margin-top: 5%;
 }
@@ -74,12 +137,27 @@ footer{
     color: black;    
 }
 
-
-
-#map_view{
-    display: none;
-    margin: 2%;
+li .active{
+    color: black;
+    border: 1px solid transparent;
+    background-color: #027AFE;
+    padding: 10px;   
 }
+
+.nav_link1:active ~  #map_view {
+    display: block;
+}
+
+#list_view:hover{
+    background-color: rosybrown;
+} 
+#lalit_div:hover{
+    background-color: rosybrown;
+}
+#taj_div:hover{
+    background-color: rosybrown;
+}
+
 #map{
     position: relative;
     padding-bottom: 5%;
@@ -104,18 +182,6 @@ footer{
     width: 22px;
 }
 
-#contact{
-    display: flex; 
-    flex-direction: row;   
-    justify-content: flex-start;    
-    align-content: center;
-    align-items: center;
-    text-decoration: none;
-    color: black;
-    margin-left: 1%;
-    
-   
-}
 #copyright{
     position: absolute;
     top: 50%;
