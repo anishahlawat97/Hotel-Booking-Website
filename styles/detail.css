@@ -112,6 +112,8 @@ body{
     font-family: 'Ubuntu', sans-serif;
 }
 
+/* Carousel Stylings*/
+
 .carousel-control-prev, .carousel-control-next{
     height: 20%;
     width: 20%;        

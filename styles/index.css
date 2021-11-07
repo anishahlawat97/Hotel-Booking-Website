@@ -1,9 +1,14 @@
+*{
+    box-sizing: content-box;
+  }
 
 html{
     height: 100%;
     width: 100%;
     margin: 0;
 }
+
+/* Header Styling */
 header{
     display: flex;
     flex-direction: row;
@@ -12,19 +17,27 @@ header{
     top: 0;
     background-color: rosybrown;
 }
-nav{  
-    
+
+#logo{
+    margin-left: 1%;
+    height: 60px;
+    width: 60px;
+}
+
+nav{    
     margin-bottom: 5%;
     position: fixed;
-    right: 1%;
-    
+    right: 1%;    
 }
+
+/* Modal CSS styling */
 form{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     
 }
+
 .form_grp{
     display: flex;
     flex-direction: row;    
@@ -65,11 +78,8 @@ form input{
 }
 button{
     margin: 10px;    
-}
+} 
 
- *{
-    box-sizing: content-box;
-  }
 
 body{
     height: 100vh;
@@ -84,20 +94,12 @@ body section{
     display: flex;
     flex-direction: column;
 }
-footer section{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    height: 60px;
-    width: 100%;
-    position: fixed;
-    bottom: 0;    
-    background-color: rosybrown;
-}
+
 #main_Container{
     height: 100%;
     width: 100%;
 }
+/* Search Bar Styling */
     
 .search{
     position: relative;
@@ -110,6 +112,7 @@ footer section{
     width: 25%;
     outline: none;
 }
+
 #search_bar{
     background-image: url(https://media-cdn.tripadvisor.com/media/photo-o/14/10/2e/af/india.jpg);
     height: 380px;
@@ -117,6 +120,7 @@ footer section{
     background-position: center;    
     background-repeat: no-repeat;    
 }
+/* City tiles styling */
 
 #city_tiles{
     
@@ -130,20 +134,12 @@ footer section{
     
 }
 
-#logo{
-    margin-left: 1%;
-    height: 60px;
-    width: 60px;
-}
-
-
 #delhi, #goa, #hyderabad, #kolkata{   
     height: 150px;
     width: 150px;    
     border-radius: 25%;  
     box-sizing: border-box;
 }
-
 .container_img{
     position: relative;
     display: flex;
@@ -177,17 +173,28 @@ footer section{
     border-radius: 25%;
 }
 
-#fb, #insta, #twitter{   
-    height: 20px;
-    width: 22px;    
-}
-
 #view{
     text-decoration: none;
     position: relative;
     margin: auto;
     color: black;
     width: 10%;
+}
+
+footer section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;    
+    background-color: rosybrown;
+}
+
+#fb, #insta, #twitter{   
+    height: 20px;
+    width: 22px;    
 }
 
 #copyright{
@@ -217,14 +224,11 @@ footer section{
         z-index: 200;      
     }  
 
-    nav{
-        
+    nav{        
         position: absolute;
-        top: 10%;       
-        
+        top: 10%;     
     }
 
-    
     #search_bar input{
         position: relative;
         left: 30%;
