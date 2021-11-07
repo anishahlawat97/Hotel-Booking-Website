@@ -1,3 +1,4 @@
+
 html{
     height: 100%;
     width: 100%;
@@ -11,9 +12,8 @@ header{
     top: 0;
     background-color: rosybrown;
 }
-nav{
-    width: 5%;
-    margin-right: 1%;
+nav{  
+    
     margin-bottom: 5%;
     position: fixed;
     right: 1%;
@@ -61,6 +61,7 @@ label{
 form input{
     
     width: 70%;
+    margin: auto;
 }
 button{
     margin: 10px;    
@@ -109,7 +110,7 @@ footer section{
     width: 25%;
     outline: none;
 }
-#seach_bar{
+#search_bar{
     background-image: url(https://media-cdn.tripadvisor.com/media/photo-o/14/10/2e/af/india.jpg);
     height: 380px;
     background-size: cover;
@@ -167,7 +168,7 @@ footer section{
 }
 
 .container_img:hover .name{
-    display: flex;
+    
     position: absolute;
     cursor: pointer;
     flex-direction:column;
@@ -204,5 +205,142 @@ footer section{
     right: 10px;
     bottom: 15px;
 }
+
+/* Media Queries */
+
+@media only screen and (max-width:576px){
+    *{
+        font-size: 10px;
+    }
+
+    header{        
+        z-index: 200;      
+    }  
+
+    nav{
+        
+        position: absolute;
+        top: 10%;       
+        
+    }
+
+    
+    #search_bar input{
+        position: relative;
+        left: 30%;
+        width: 40%;
+    }
+
+    #city_tiles{
+        display: flex;
+        flex-direction: column;
+        margin-top: 4%;
+    
+    }
+
+    .container_img{
+        margin-bottom: 5%;
+    }
+
+    #view{
+        display: flex;
+        justify-content: center;        
+        margin-bottom: 30%;
+        width: 25%;
+    }
+    
+    #copyright{
+        font-size: 9px;
+    }
+    footer section button{
+        position: absolute;
+        top: 5px;
+        height: 35%;
+        width: 15%;        
+    }
+
+    .social{
+        position: absolute;
+        top: 20px;
+    }
+}
+
+@media only screen and (min-width:577px) and (max-width: 768px){
+
+    header{
+        z-index: 100;
+    }
+    
+
+    #city_tiles{ 
+        margin: auto;
+        max-width: 55%;                     
+        display: flex;
+        flex-direction: row;
+        flex-wrap:wrap;
+        justify-content: space-evenly;   
+        margin-top: 5%;        
+    }
+
+    #delhi, #goa, #hyderabad, #kolkata{   
+        height: 150px;
+        width: 150px;    
+        border-radius: 25%;  
+        box-sizing: border-box;
+    }
+    
+    #delhi{
+        margin-top: -6%;        
+    }
+
+    .container_img{
+        margin-bottom: 5%;
+    }
+
+    #search_bar input{
+        position: relative;
+        left: 30%;
+        width: 40%;
+    }
+    
+    #view{
+        margin-top: 5%;       
+        width: 20%;        
+    }
+
+    #copyright{
+        font-size: 12px;
+    }
+}
+
+@media only screen and (min-width:769px) and (max-width: 1279px){
+
+    #search_bar input{
+        position: relative;
+        left: 30%;
+        width: 45%;
+    }
+
+    #city_tiles{ 
+        margin: auto;                            
+        display: flex;
+        flex-direction: row;
+        flex-wrap:wrap;
+        justify-content: space-evenly;   
+        margin-top: 10%;        
+    }
+
+    #view{
+        margin-top: 10%;       
+        width: 20%;        
+    }
+}
+
+   
+
+
+
+   
+
   
 

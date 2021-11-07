@@ -169,3 +169,190 @@ article{
     right: 10px;
     bottom: 15px;
 }
+
+/* Media Queries */
+
+@media only screen and (max-width: 576px){
+
+    *{
+        font-size: 10px;
+    }
+    
+    nav{        
+        position: absolute;
+        top:8px;        
+        font-weight: bold;
+    }
+
+    #hotel_div{   
+        margin-top: 15%; 
+        width: 100%;
+        margin-right: 0px;
+    }
+    .hotel_info{
+        margin-top: 5%;
+        margin-left: 0px;
+        text-align: center;
+        width: 100%;
+    }
+    article{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    #radisson{      
+        width: 80%;
+        margin-top: 5%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    article{
+        width: 95%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        background-color: rosybrown;        
+        margin-bottom: 20%;   
+    }
+
+    #info_div{
+        margin: 0px;
+    }
+    #info_div p{
+        font-size: 15px;
+    }
+
+    .hotel_info h2{
+        font-size: 30px;
+    }
+    .hotel_info p{
+        font-size: 15px;
+    }
+
+    #info_div p Strong{
+        font-size: 15px;
+    }
+    
+    #tariff_div{
+        margin: 0px;       
+    }
+    #tariff_div p{
+        font-size: 15px;
+    }
+
+    #tariff_div p Strong{
+        font-size: 15px;
+    }
+    
+    #pay{
+        width: 20%;
+        margin: 0 auto;
+        margin-bottom: 5px;
+    }
+    
+
+    #copyright{
+        font-size: 9px;
+    }
+    footer button{
+        position: absolute;
+        top: 8px;        
+        width: 22%;      
+    }
+    #social{
+        position: absolute;
+        top: 20px;
+    }
+}
+
+    @media only screen and (min-width: 577px) and (max-width: 768px){
+        
+        #radisson{            
+            width: 100%;
+            margin: 0 auto;
+        }
+        section{
+            margin-top: 15%;
+        }
+        #hotel_div{
+            margin-top: 20%;
+            display: flex;
+            flex-direction: row; 
+            justify-content: center; 
+            align-items: center; 
+            width: 90%;
+            margin: 0 auto;
+            margin-bottom: 5%;
+            
+        }
+        .hotel_info{
+            margin-top: 0px;
+            margin-left: 2%;
+            text-align: left;
+            width: 100%;
+        }
+
+        #info_div p{
+            font-size: 20px;
+        }
+    
+        .hotel_info h2{
+            font-size: 30px;
+        }
+        .hotel_info p{
+            font-size: 20px;
+        }
+    
+        #info_div p Strong{
+            font-size: 20px;
+        }
+
+        #tariff_div p{
+            font-size: 20px;
+        }
+    
+        #tariff_div p Strong{
+            font-size: 20px;
+        }     
+        
+        #pay{
+            font-size: 20px;
+            width: 40%;
+        }
+
+        #copyright{
+            font-size: 15px;
+        }      
+
+        
+    }
+
+    @media only screen and (min-width:769px) and (max-width: 1279px){
+
+        #radisson{            
+            width: 100%;
+            margin: 0 auto;
+        }
+        
+        .hotel_info{
+            margin-top: 5px;            
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: left;
+            width: 90%;
+        }
+
+        #pay{
+            font-size: 20px;
+            width: 20%;
+        }
+        
+
+        #copyright{
+            font-size: 15px;
+        }    
+    }

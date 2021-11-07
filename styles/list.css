@@ -25,8 +25,7 @@ header{
 }
 nav{
     position: fixed;
-    right: 1%;
-    
+    right: 1%;    
     margin-bottom: 2%;
 }
 .nav_link1{
@@ -76,8 +75,7 @@ label{
     margin-right: 5%;
 }
     
-form input{
-    
+form input{    
     width: 70%;
 }
 button{
@@ -121,7 +119,7 @@ footer{
     background-color: rosybrown;
 }
 
-#info{    
+#info1, #info2, #info3{    
     float: left;  
     margin-left: 2%; 
 }
@@ -196,6 +194,148 @@ li .active{
     position: fixed;
     right: 10px;
     bottom: 15px;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 576px){
+    *{
+        font-size: 10px;
+    }
+
+    
+    nav{        
+        position: absolute;
+        top:1px;        
+        font-weight: bold;
+    }
+    ul{
+        width: 35%;
+       
+    }
+    .views{        
+        margin-top: 20%;        
+    }
+    
+    #list_{
+        display: flex;
+        flex-direction: column;    
+    }  
+    #info3{
+        margin-top: 0px;
+    }
+    #list_view, #lalit_div, #taj_div{
+        margin-left: 0px;        
+        width: 100%;
+    }
+    #taj_div{        
+        margin-bottom: 20%;        
+    }
+    #map_view{
+        position: absolute;
+        top:200px;
+        bottom: 0px;
+        width: 100%;
+    }
+    #maps{
+        height: 300px;
+        width: 100%;
+        margin-top: 0px;
+    }
+
+    #radisson, #taj, #lalit{
+        width: 100%;
+    }   
+
+    #copyright{
+        font-size: 9px;
+    }
+    footer button{
+        position: absolute;
+        top: 3px;
+        height: 35%;
+        width: 16%;      
+    }
+    #social{
+        position: absolute;
+        top: 20px;
+    }
+
+
+}
+
+@media only screen and (min-width: 577px) and (max-width: 768px){
+
+    
+    .views{
+        margin-top: 15%;
+    }
+
+    ul{
+        width: 35%;       
+    }
+
+    #list_{
+        display: flex;
+        flex-direction: column;    
+    }  
+
+    #list_view, #lalit_div, #taj_div{
+        margin-left: 5%;     
+        width: 90%;
+    }
+    #taj_div{        
+        margin-bottom: 5%;        
+    }
+
+    #map_view{
+        position: absolute;
+        top:200px;
+        bottom: 0px;
+        width: 100%;
+    }
+    #maps{
+        height: 300px;
+        width: 100%;
+        margin-top: 0px;
+    }
+
+
+    #copyright{
+        font-size: 12px;
+    }
+    
+    #social{
+        position: absolute;
+        top: 20px;
+    }
+}
+
+@media only screen and (min-width:769px) and (max-width: 1279px){
+
+    .views{
+        margin-top: 11%;
+    }
+
+    #list_view, #lalit_div, #taj_div{
+        margin-left: 5%;     
+        width: 90%;
+    }
+
+    #map_view{
+        position: absolute;
+        top:200px;
+        bottom: 0px;
+        width: 100%;
+    }
+    #maps{
+        height: 400px;
+        width: 100%;
+        margin-top: 0px;
+    }
+
+    #copyright{
+        font-size: 12px;
+    }
 }
 
 
