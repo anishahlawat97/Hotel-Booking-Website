@@ -16,6 +16,7 @@ header{
     position: fixed;
     top: 0;
     background-color: rosybrown;
+    z-index: 100;
 }
 
 #logo{
@@ -122,23 +123,22 @@ body section{
 }
 /* City tiles styling */
 
-#city_tiles{
-    
+.city_tiles{    
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     align-content: center;
     width: 100%;
     margin-top: 3%;
-    margin-bottom: 3%;  
-    
+    margin-bottom: 2%;      
 }
 
-#delhi, #goa, #hyderabad, #kolkata{   
+#delhi, #goa, #hyderabad, #kolkata, #chennai, #jaipur, #agra, #bengaluru{   
     height: 150px;
     width: 150px;    
     border-radius: 25%;  
     box-sizing: border-box;
+    box-shadow: 10px 10px 10px rgb(0, 0, 0, 0.5);
 }
 .container_img{
     position: relative;
@@ -179,6 +179,7 @@ body section{
     margin: auto;
     color: black;
     width: 10%;
+    margin-bottom: 5%;
 }
 
 footer section{
