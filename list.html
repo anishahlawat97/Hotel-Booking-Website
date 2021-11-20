@@ -19,15 +19,7 @@
 </head>
 <body>    
     <div id="main_Container">        
-        <header>
-            <div>
-                <a href="index.html"><img id="logo" src="assests\images\logo.png" alt="logo"></a>
-            </div>
-            <nav>
-                 <!-- Button trigger modal -->
-                 <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#exampleModal">LOGIN</button>                
-            </nav>
-        </header>
+        <header id="headerContainer"></header>
         <section>
             <div class="views">
                 <ul class="nav nav-pills">
@@ -86,17 +78,10 @@
                 </div>
             </div>
         </section>
-        <footer>
-            <button style="margin-left: 2%; color: white; background-color: #19A1B8;" type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#exampleModal2">Contact Us</button>                        
-            <div id="social">
-                <a href="https:/www.facebook.com" target="_blank"><img id="fb" src="assests\images\facebook.png" alt="Facebook"></a>
-                <a href="https:/www.instagram.com" target="_blank"><img id="insta" src="assests\images\instagram.png" alt="Instagram"></a>
-                <a href="https:/www.twitter.com" target="_blank"><img id="twitter" src="assests\images\twitter.png" alt="Twitter"></a>
-            </div>
-            <div id="copyright">&copy; 2020 ROOM SEARCH PVT. LTD.</div>
-        </footer>
+        <footer id="footerContainer"></footer>
     </div>
     
+    <!-- Login Modal -->
     <!-- Login Modal -->
     <div class="modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
@@ -106,17 +91,17 @@
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <form action="index.html">
+                <form action="#">
                     <div class="form_grp">
-                        <label for="user_email">Username: </label>
-                        <input required type="email" placeholder="Enter Username" name="user_email" autocomplete="off">
+                        <label for="userName">Username: </label>
+                        <input required id="userName" type="text" placeholder="Enter Username" name="user_email" autocomplete="off">
                     </div>
                     <div class="form_grp">
-                        <label for="user_pwd">Password: </label>
-                        <input required type="password" placeholder="Enter Password" name="user_pwd" autocomplete="off">
+                        <label for="userPwd">Password: </label>
+                        <input required id="userPwd" type="password" placeholder="Enter Password" name="user_pwd" autocomplete="off">
                     </div>                                       
                     <div class="modal-footer1 modal-footer">                        
-                        <input id="login_button" type="submit" class="btn btn-primary" value="Login">
+                        <button type="button" data-bs-dismiss="modal"  id="login_button" onclick="checkLogin()" class="btn btn-primary">Login</button>
                     </div>
                 </form>
             </div>         
@@ -147,8 +132,9 @@
             </div>            
         </div>
         </div>
-    </div>
+    </div>    
     <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>  
+    <script type="text/javascript" src="scripts/common.js"></script>
 </body>
 </html>

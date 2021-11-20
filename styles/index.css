@@ -81,6 +81,10 @@ button{
     margin: 10px;    
 } 
 
+#logoutBtn{
+    display: none;
+}
+
 
 body{
     height: 100vh;
@@ -123,6 +127,10 @@ body section{
 }
 /* City tiles styling */
 
+#more{
+    display: none;
+}
+
 .city_tiles{    
     display: flex;
     justify-content: space-evenly;
@@ -140,6 +148,9 @@ body section{
     box-sizing: border-box;
     box-shadow: 10px 10px 10px rgb(0, 0, 0, 0.5);
 }
+
+
+
 .container_img{
     position: relative;
     display: flex;
@@ -178,7 +189,7 @@ body section{
     position: relative;
     margin: auto;
     color: black;
-    width: 10%;
+    width: 8.5%;
     margin-bottom: 5%;
 }
 

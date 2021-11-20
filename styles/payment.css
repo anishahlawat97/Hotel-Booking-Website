@@ -77,7 +77,7 @@ body{
     font-family: 'Ubuntu', sans-serif;
 }
 
-footer{
+footer section{
     display: flex;
     flex-direction: row;
     height: 60px;
@@ -163,7 +163,7 @@ article{
     font-size: 10px;
     color: black;
 }
-#social{
+.social{
     margin-right: 1%;
     position: fixed;
     right: 10px;
@@ -256,12 +256,12 @@ article{
     #copyright{
         font-size: 9px;
     }
-    footer button{
+    footer section button{
         position: absolute;
         top: 8px;        
         width: 22%;      
     }
-    #social{
+    .social{
         position: absolute;
         top: 20px;
     }

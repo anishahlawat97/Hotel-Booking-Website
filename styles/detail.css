@@ -136,7 +136,7 @@ body{
     
 }
 
-footer{
+footer section{
     display: flex;
     flex-direction: row;
     height: 60px;
@@ -216,7 +216,7 @@ footer{
     font-size: 10px;
     color: black;
 }
-#social{
+.social{
     margin-right: 1%;
     position: fixed;
     right: 10px;
@@ -292,13 +292,13 @@ footer{
     #copyright{
         font-size: 9px;
     }
-    footer button{
+    footer section button{
         position: absolute;
         top: 3px;
         height: 35%;
         width: 16%;      
     }
-    #social{
+    .social{
         position: absolute;
         top: 20px;
     }

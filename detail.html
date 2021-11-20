@@ -22,16 +22,7 @@
 <body>
     
     <div id="main_Container">
-        <header>
-            <div>
-                <a href="index.html"><img id="logo" src="assests\images\logo.png" alt="logo"></a>
-            </div>
-            <nav>
-                <!-- Button trigger modal -->
-                <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#exampleModal">LOGIN</button>
-                
-            </nav>
-        </header>
+        <header id="headerContainer"></header>
         <section>
             <div>
                 <article class="form_fill">
@@ -62,30 +53,30 @@
                 <div id="form_container">
                 <form id="form_div" action="payment.html">
                     <div class="form_grp">
-                        <label for="num">Adults: </label>
-                        <input required type="number" name="num" value="1"/>
+                        <label for="adultsCount">Adults: </label>
+                        <input onchange="calculateAmount()" id="adultsCount" required type="number" name="num" min="1" value="1"/>
                     </div>
                     <div class="form_grp">
-                        <label for="name">Name: </label>
-                        <input required type="text" name="name" autocomplete="off"/>
+                        <label for="Cname">Name: </label>
+                        <input id="Cname" required type="text" name="name" autocomplete="off"/>
                     </div>
                     <div class="form_grp">
-                        <label for="in_date">From Date: </label>
-                        <input required type="date" name="in_date"/>
+                        <label for="fromDate">From Date: </label>
+                        <input onchange="calculateAmount()" id="fromDate" required type="date" name="in_date"/>
                     </div>
                     <div class="form_grp">
-                        <label for="out_date">To Date: </label>
-                        <input required type="date" name="out_date"/>
+                        <label for="toDate">To Date: </label>
+                        <input onchange="calculateAmount()" id="toDate" required type="date" name="out_date"/>
                     </div>
                     <div class="form_grp">
-                        <label for="amount">Total: </label>
-                        <input disabled/>
+                        <label for="total">Total: </label>
+                        <input  id="total" readonly/>
                     </div>
                     <div class="book_button">
                         <input  type="submit" class="btn btn-success" value="Book Now"/>
                     </div>
                 </form>
-                </div>
+                </div>                
                 </article>
                 <div id="info_div">
                     <h2 style="font-size: 1.5em; font-weight: bold;">Radisson Blu Hotel</h2>
@@ -108,16 +99,7 @@
                 </div>
             </div>
         </section>
-        <footer>
-            <button style="margin-left: 2%; color: white; background-color: #19A1B8;" type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#exampleModal2">Contact Us</button>
-            
-            <div id="social">
-                <a href="https:/www.facebook.com" target="_blank"><img id="fb" src="assests\images\facebook.png" alt="Facebook"></a>
-                <a href="https:/www.instagram.com" target="_blank"><img id="insta" src="assests\images\instagram.png" alt="Instagram"></a>
-                <a href="https:/www.twitter.com" target="_blank"><img id="twitter" src="assests\images\twitter.png" alt="Twitter"></a>
-            </div>
-            <div id="copyright">&copy; 2020 ROOM SEARCH PVT. LTD.</div>
-        </footer>
+        <footer id="footerContainer"></footer>
     </div>
     
     <!-- Login Modal -->
@@ -129,17 +111,17 @@
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <form class="footer_form" action="index.html">
-                    <div class="form_group">
-                        <label class="label_footer" for="user_email">Username: </label>
-                        <input required class="input_footer" type="email" placeholder="Enter Username" name="user_email" autocomplete="off">
+                <form action="#">
+                    <div class="form_grp">
+                        <label for="userName">Username: </label>
+                        <input required id="userName" type="text" placeholder="Enter Username" name="user_email" autocomplete="off">
                     </div>
-                    <div class="form_group">
-                        <label class="label_footer" for="user_pwd">Password: </label>
-                        <input required class="input_footer" type="password" placeholder="Enter Password" name="user_pwd" autocomplete="off">
+                    <div class="form_grp">
+                        <label for="userPwd">Password: </label>
+                        <input required id="userPwd" type="password" placeholder="Enter Password" name="user_pwd" autocomplete="off">
                     </div>                                       
                     <div class="modal-footer1 modal-footer">                        
-                        <input id="login_button" type="submit" class="btn btn-primary input_footer" value="Login">
+                        <button type="button" data-bs-dismiss="modal"  id="login_button" onclick="checkLogin()" class="btn btn-primary">Login</button>
                     </div>
                 </form>
             </div>         
@@ -171,5 +153,7 @@
         </div>
         </div>
     </div>  
+    <script type="text/javascript" src="scripts/common.js"></script>
+    <script type="text/javascript" src="scripts/detail.js"></script>
 </body>
 </html>

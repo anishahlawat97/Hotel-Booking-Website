@@ -16,15 +16,7 @@
 <body>
     
     <div id="main_Container">
-        <header>
-            <div>
-                <a href="index.html"><img id="logo" src="assests\images\logo.png" height="100px" width="150px" alt="logo"></a>
-            </div>
-            <nav>
-                <!-- Button trigger modal -->
-                <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#exampleModal">LOGIN</button>                
-            </nav>
-        </header>
+        <header id="headerContainer"></header>
         <section>
                 <div id="hotel_div">
                     <img id="radisson" src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg"  alt="Radisson Blu Hotel">
@@ -45,18 +37,10 @@
                         <p style="font-family: cursive;"><strong>Tariff Breakdown:</strong> Rs. 1000 x 2 Adults x 5 Nights</p>
                         <p style="font-family: cursive;"><strong>Tariff Amount:</strong> Rs. 10000</p>
                     </div>
-                    <button id="pay" class="btn btn-success" disabled>Pay Now</button>
+                    <button id="pay" onclick="payNow()" class="btn btn-success" disabled>Pay Now</button>
                 </article>
         </section>
-        <footer>
-            <button style="margin-left: 2%; color: white; background-color: #19A1B8;" type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#exampleModal2">Contact Us</button>            
-            <div id="social">
-                <a href="https:/www.facebook.com" target="_blank"><img id="fb" src="assests\images\facebook.png" alt="Facebook"></a>
-                <a href="https:/www.instagram.com" target="_blank"><img id="insta" src="assests\images\instagram.png" alt="Instagram"></a>
-                <a href="https:/www.twitter.com" target="_blank"><img id="twitter" src="assests\images\twitter.png" alt="Twitter"></a>
-            </div>
-            <div id="copyright">&copy; 2020 ROOM SEARCH PVT. LTD.</div>
-        </footer>
+        <footer id="footerContainer"></footer>
     </div>
     
     <!-- Login Modal -->
@@ -68,17 +52,17 @@
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <form class="footer_form" action="index.html">
-                    <div class="form_group">
-                        <label class="label_footer" for="user_email">Username: </label>
-                        <input required class="input_footer" type="email" placeholder="Enter Username" name="user_email" autocomplete="off">
+                <form action="#">
+                    <div class="form_grp">
+                        <label for="userName">Username: </label>
+                        <input required id="userName" type="text" placeholder="Enter Username" name="user_email" autocomplete="off">
                     </div>
-                    <div class="form_group">
-                        <label class="label_footer" for="user_pwd">Password: </label>
-                        <input required class="input_footer" type="password" placeholder="Enter Password" name="user_pwd" autocomplete="off">
+                    <div class="form_grp">
+                        <label for="userPwd">Password: </label>
+                        <input required id="userPwd" type="password" placeholder="Enter Password" name="user_pwd" autocomplete="off">
                     </div>                                       
                     <div class="modal-footer1 modal-footer">                        
-                        <input id="login_button" type="submit" class="btn btn-primary input_footer" value="Login">
+                        <button type="button" data-bs-dismiss="modal" id="login_button" onclick="checkLogin()" class="btn btn-primary">Login</button>
                     </div>
                 </form>
             </div>         
@@ -109,6 +93,9 @@
             </div>            
         </div>
         </div>
-    </div>  
+    </div>
+    <!-- <script type="text/javascript" src="scripts/index.js"></script>  -->
+    <script type="text/javascript" src="scripts/common.js"></script>  
+    <script type="text/javascript" src="scripts/payment.js"></script>
 </body>
 </html>
