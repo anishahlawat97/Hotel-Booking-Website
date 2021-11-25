@@ -1,4 +1,5 @@
 function collapse() {
+  
     var moreTiles = document.getElementById("more");
     var btnText = document.getElementById("myBtn");
   
@@ -11,5 +12,9 @@ function collapse() {
       btnText.innerHTML = "View More";
     }
   }
+
+  
+
+
 
  

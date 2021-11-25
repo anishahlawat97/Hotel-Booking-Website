@@ -16,11 +16,9 @@
         .checked{
             color: orange;
         }
-    </style>
-    
+    </style>    
 </head>
-<body>
-    
+<body>    
     <div id="main_Container">
         <header id="headerContainer"></header>
         <section>
@@ -28,16 +26,7 @@
                 <article class="form_fill">
                 <div id="img_container">
                     <div id="carouselExampleControls" class="carousel" data-bs-ride="carousel">
-                        <div class="carousel-inner">
-                          <div class="carousel-item active">
-                            <img class="slider_img" src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" class="d-block w-100" alt="poolside">
-                          </div>
-                          <div class="carousel-item">
-                            <img class="slider_img" src="https://media-cdn.tripadvisor.com/media/photo-o/01/fa/51/70/r-the-spa.jpg" class="d-block w-100" alt="spa">
-                          </div>
-                          <div class="carousel-item">
-                            <img class="slider_img" src="https://media-cdn.tripadvisor.com/media/photo-w/0e/b2/64/3f/radisson-blu-plaza-delhi.jpg" class="d-block w-100" alt="Raddison Blu Hotel">
-                          </div>
+                        <div id="carouselPhotos" class="carousel-inner">                         
                         </div>
                         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
                           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -47,14 +36,13 @@
                           <span class="carousel-control-next-icon" aria-hidden="true"></span>
                           <span class="visually-hidden">Next</span>
                         </button>
-                      </div>          
-                    
+                      </div>       
                 </div>
                 <div id="form_container">
                 <form id="form_div" action="payment.html">
                     <div class="form_grp">
                         <label for="adultsCount">Adults: </label>
-                        <input onchange="calculateAmount()" id="adultsCount" required type="number" name="num" min="1" value="1"/>
+                        <input onchange="calculateAmount()" id="adultsCount" required type="number" name="adults" min="1" value="1"/>
                     </div>
                     <div class="form_grp">
                         <label for="Cname">Name: </label>
@@ -70,32 +58,16 @@
                     </div>
                     <div class="form_grp">
                         <label for="total">Total: </label>
-                        <input  id="total" readonly/>
+                        <input  id="total" value="Rs. 0" name="totalAmount" readonly/>
                     </div>
                     <div class="book_button">
-                        <input  type="submit" class="btn btn-success" value="Book Now"/>
+                        <input type="submit" class="btn btn-success" value="Book Now"/>
                     </div>
+                    <input type="hidden" id="locationID" name="location_id"/>                    
                 </form>
                 </div>                
                 </article>
-                <div id="info_div">
-                    <h2 style="font-size: 1.5em; font-weight: bold;">Radisson Blu Hotel</h2>
-                    <h5 style="font-size: 0.83em; font-family: cursive; font-weight: bold;">RATING</h5>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <h5 style="font-size: 0.83em; font-family: cursive; font-weight: bold;">AMENITIES</h5>
-                    <ul>
-                        <li>Room service</li>
-                        <li>Restaurant</li>
-                        <li>Business center</li>
-                        <li>Fitness center</li>
-                        <li>Pool</li>
-                    </ul>
-                    <h5 style="font-size: 0.83em; font-family: cursive; font-weight: bold;">DESCRIPTION</h5>
-                    <p id="padding_bottom">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad laudantium odio provident? Quidem ducimus eius optio fugit, laudantium voluptas distinctio blanditiis deleniti accusantium, sequi nam vitae iste nesciunt earum! Corrupti.</p>
+                <div id="info_div">                    
                 </div>
             </div>
         </section>

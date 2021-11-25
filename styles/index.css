@@ -125,6 +125,7 @@ body section{
     background-position: center;    
     background-repeat: no-repeat;    
 }
+
 /* City tiles styling */
 
 #more{
@@ -247,7 +248,7 @@ footer section{
         width: 40%;
     }
 
-    #city_tiles{
+    .city_tiles{
         display: flex;
         flex-direction: column;
         margin-top: 4%;
@@ -288,7 +289,7 @@ footer section{
     }
     
 
-    #city_tiles{ 
+    .city_tiles{ 
         margin: auto;
         max-width: 55%;                     
         display: flex;
@@ -321,7 +322,8 @@ footer section{
     
     #view{
         margin-top: 5%;       
-        width: 20%;        
+        width: 20%;
+        margin-bottom: 10%;        
     }
 
     #copyright{
@@ -337,7 +339,7 @@ footer section{
         width: 45%;
     }
 
-    #city_tiles{ 
+    .city_tiles{ 
         margin: auto;                            
         display: flex;
         flex-direction: row;
@@ -348,7 +350,7 @@ footer section{
 
     #view{
         margin-top: 10%;       
-        width: 20%;        
+        width: 14%;        
     }
 }
 

@@ -8,6 +8,11 @@ html{
     box-sizing: content-box;
 }
 
+.hotels{
+    margin-left: 5%;     
+    width: 90%;
+}
+
 h3{
     font-size: 18.75px;
 }
@@ -123,13 +128,15 @@ li{
 
 
 
-#info1, #info2, #info3{    
-    float: left;  
-    margin-left: 2%; 
+#info1, #info2, #info3, .infoDiv{    
+    float:left;  
+    margin-left: 2.5%;
+    width: 40%; 
 }
 
-#list_view, #lalit_div, #taj_div{
+.hotels{
     text-decoration: none;
+    justify-content: space-evenly;
     margin: 3% 4%;
     width: 40%;
     margin-bottom: 4%;
@@ -150,7 +157,7 @@ li .active{
     display: block;
 }
 
-#list_view:hover{
+.hotels:hover{
     background-color: rosybrown;
 } 
 #lalit_div:hover{
@@ -170,7 +177,7 @@ li .active{
     width: 100%;
 }
 
-#radisson, #lalit, #taj{
+#radisson, #lalit, #taj, .hotel_img{
     float: left;
     height: 200px;
     width: 250px;
@@ -218,8 +225,8 @@ footer section{
 
     
     nav{        
-        position: absolute;
-        top:1px;        
+        position: fixed;
+        top:5px;        
         font-weight: bold;
     }
     ul{
@@ -232,18 +239,24 @@ footer section{
     
     #list_{
         display: flex;
-        flex-direction: column;    
+        flex-direction: column; 
+        width: 95%;
+        margin-top: 5%;
+        margin-left: 2%;
+        margin-right: 2%;
+        
     }  
-    #info3{
+    .infoDiv{
         margin-top: 0px;
+        width: 90%;
     }
-    #list_view, #lalit_div, #taj_div{
+    
+    .hotels{
         margin-left: 0px;        
         width: 100%;
+        margin-bottom: 15%;
     }
-    #taj_div{        
-        margin-bottom: 20%;        
-    }
+   
     #map_view{
         position: absolute;
         top:200px;
@@ -256,7 +269,7 @@ footer section{
         margin-top: 0px;
     }
 
-    #radisson, #taj, #lalit{
+    #radisson, #taj, #lalit, .hotel_img{
         width: 100%;
     }   
 
@@ -297,6 +310,11 @@ footer section{
         margin-left: 5%;     
         width: 90%;
     }
+    .hotels{
+        margin-left: 5%;     
+        width: 90%;
+        margin-bottom: 8%;
+    }
     #taj_div{        
         margin-bottom: 5%;        
     }
@@ -330,9 +348,10 @@ footer section{
         margin-top: 11%;
     }
 
-    #list_view, #lalit_div, #taj_div{
+    .hotels{
         margin-left: 5%;     
         width: 90%;
+        margin-bottom: 6%;
     }
 
     #map_view{
