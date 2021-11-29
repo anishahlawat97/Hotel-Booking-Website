@@ -19,6 +19,7 @@ function checkLogin(){
         alert('You have successfully logged in');
         myLogBtn.style.display="none";
         myLogoutBtn.style.display="block";
+        localStorage.setItem('loginToken', 'true');  
         document.getElementsByClassName("btn-close")[0].click();
         myPayBtn.disabled = false;    
     }
@@ -36,15 +37,34 @@ function logoutFn(){
     myPayBtn.disabled = true;
     localStorage.removeItem("user");
     localStorage.removeItem("pwd");
+    // location.reload();
 }
 
+window.onload = function(){
+    let myPayBtn1 = document.getElementById('pay');
+    let myLogin= document.getElementById('loginBtn');
+    let myLogout = document.getElementById('logoutBtn');
+    if(localStorage.getItem('loginToken') === 'true'){
+        myLogout.style.display ="block";
+        myLogin.style.display="none";
+        myPayBtn1.disabled= false;
+    }  
+    else {
+        myLoginBtn.style.display = "block";
+        myLogoutBtn.style.display ="none";
+    }
+}
+
+
 function payNow(){
-    alert("Your booking is Succesufull!!!");
+    alert("Your booking is Successfull!!!");
 }
 
 //Fetch all the payment details and hotel details
 
 function getPaymentDetails(){
+    let loader = `<div class="boxLoading"></div>`;
+    document.getElementById('hotel_div').innerHTML = loader;
     const data = null;
 
     const xhr = new XMLHttpRequest();
@@ -78,7 +98,7 @@ function getPaymentDetails(){
 
     xhr.open("GET", "https://travel-advisor.p.rapidapi.com/hotels/get-details?location_id="+locationID+"&checkin=25-10-2021&adults=1&lang=en_US&child_rm_ages=7%2C10&currency=USD&nights=2");
     xhr.setRequestHeader("x-rapidapi-host", "travel-advisor.p.rapidapi.com");
-    xhr.setRequestHeader("x-rapidapi-key", "cb317dd6bcmsheb95c2514d30caap1faf14jsn492d361686e4");
+    xhr.setRequestHeader("x-rapidapi-key", "54820a3f8bmsh6eb73e1468a61b6p16d82fjsncd7f5423e63f");
 
     xhr.send(data);
 }

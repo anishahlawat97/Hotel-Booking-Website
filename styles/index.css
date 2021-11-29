@@ -104,6 +104,23 @@ body section{
     height: 100%;
     width: 100%;
 }
+
+#loading{    
+    position: fixed;
+    top: 45%;
+    left: 47%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    height: 70px;
+    width: 70px;
+    border: 12px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 12px solid #444444; 
+    animation-name: rotate-loader;
+    animation-iteration-count: infinite;
+    animation-duration: .75s;
+    animation-timing-function: linear;    
+}
 /* Search Bar Styling */
     
 .search{
@@ -115,7 +132,43 @@ body section{
     border: 1px transparent;
     border-radius: 12px;
     width: 25%;
+    margin: 0 auto;
     outline: none;
+}
+
+#dropdownSearch{    
+    position: relative;
+    padding: 10px;
+    top: 45%;
+    left: 37%;
+    background-color: #f1f1f1;
+    border: 1px solid #f1f1f1;
+    border-radius: 12px;
+    width: 25%;
+    display: none;
+    margin-top: .05%;
+    
+}
+
+hr{
+    color: rgb(206, 203, 203);
+}
+
+.dropdownList{
+    list-style: none;
+    text-decoration: none;
+    /* width: 100%;
+    display: flex;
+    justify-content: flex-start; */
+}
+
+.dropdownList:hover{
+    background: rgb(230, 228, 228);
+}
+
+a{
+    text-decoration: none;
+    color: black;
 }
 
 #search_bar{
@@ -190,7 +243,7 @@ body section{
     position: relative;
     margin: auto;
     color: black;
-    width: 8.5%;
+    width: 10%;
     margin-bottom: 5%;
 }
 
@@ -255,6 +308,13 @@ footer section{
     
     }
 
+    #dropdownSearch{ 
+        margin-top: .5%;   
+        width: 39.5%;
+        position: relative;
+        left: 30%;
+    }
+
     .container_img{
         margin-bottom: 5%;
     }
@@ -304,11 +364,7 @@ footer section{
         width: 150px;    
         border-radius: 25%;  
         box-sizing: border-box;
-    }
-    
-    #delhi{
-        margin-top: -6%;        
-    }
+    }    
 
     .container_img{
         margin-bottom: 5%;
@@ -318,6 +374,13 @@ footer section{
         position: relative;
         left: 30%;
         width: 40%;
+    }
+
+    #dropdownSearch{ 
+        margin-top: .5%;   
+        width: 39.5%;
+        position: relative;
+        left: 30%;
     }
     
     #view{
@@ -337,6 +400,13 @@ footer section{
         position: relative;
         left: 30%;
         width: 45%;
+    }
+
+    #dropdownSearch{ 
+        margin-top: .5%;   
+        width: 45%;
+        position: relative;
+        left: 30%;
     }
 
     .city_tiles{ 

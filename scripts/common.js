@@ -25,7 +25,6 @@ document.getElementById('footerContainer').innerHTML = footerTemplate;
 
 //Login Credentials Check
 
-
 function checkLogin(){ 
    
   localStorage.setItem('user', 'admin');
@@ -43,6 +42,7 @@ function checkLogin(){
 
   if(enteredName.value == storedName && enteredPwd.value == storedPwd){
       alert('You have successfully logged in');
+      localStorage.setItem('loginToken', 'true');      
       myLoginBtn.style.display="none";
       myLogoutBtn.style.display="block";
       document.getElementsByClassName("btn-close")[0].click();    
@@ -52,6 +52,19 @@ function checkLogin(){
   }    
 }
 
+window.onload = function(){
+    let myLogin= document.getElementById('loginBtn');
+    let myLogout = document.getElementById('logoutBtn');
+    if(localStorage.getItem('loginToken') === 'true'){
+        myLogout.style.display ="block";
+        myLogin.style.display="none";
+    }  
+    else {
+        myLogin.style.display = "block";
+        myLogout.style.display ="none";
+    }
+}
+
 function logoutFn(){
     var loginBtn= document.getElementById('loginBtn');
     var logoutBtn = document.getElementById('logoutBtn');
@@ -59,7 +72,12 @@ function logoutFn(){
     loginBtn.style.display = "block";
     localStorage.removeItem("user");
     localStorage.removeItem("pwd");
+    localStorage.removeItem("loginToken");
+    location.reload();
+
 }
+
+
 
 
 

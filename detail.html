@@ -19,7 +19,8 @@
     </style>    
 </head>
 <body>    
-    <div id="main_Container">
+    <div id="main_Container">       
+        <!-- Header Div -->
         <header id="headerContainer"></header>
         <section>
             <div>
@@ -42,7 +43,7 @@
                 <form id="form_div" action="payment.html">
                     <div class="form_grp">
                         <label for="adultsCount">Adults: </label>
-                        <input onchange="calculateAmount()" id="adultsCount" required type="number" name="adults" min="1" value="1"/>
+                        <input type="number" onchange="calculateAmount()" id="adultsCount" required  name="adults" min="1" value="1"/>
                     </div>
                     <div class="form_grp">
                         <label for="Cname">Name: </label>

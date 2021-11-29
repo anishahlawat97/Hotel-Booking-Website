@@ -27,6 +27,8 @@ var calculateAmount= () =>{
 
 //Fetch Hotel Details
 function getHotelDetails(){
+    let loader = `<div class="boxLoading"></div>`;
+    document.getElementById('info_div').innerHTML = loader;
     const data = null;
 
     const xhr = new XMLHttpRequest();
@@ -57,7 +59,7 @@ function getHotelDetails(){
 
     xhr.open("GET", "https://travel-advisor.p.rapidapi.com/hotels/get-details?location_id="+locationID+"&adults=1&lang=en_US&child_rm_ages=7%2C10&currency=USD&nights=2");
     xhr.setRequestHeader("x-rapidapi-host", "travel-advisor.p.rapidapi.com");
-    xhr.setRequestHeader("x-rapidapi-key", "cb317dd6bcmsheb95c2514d30caap1faf14jsn492d361686e4");
+    xhr.setRequestHeader("x-rapidapi-key", "54820a3f8bmsh6eb73e1468a61b6p16d82fjsncd7f5423e63f");
 
     xhr.send(data);
 }
@@ -100,32 +102,34 @@ window.addEventListener("load", getHotelDetails);
 
 // Fetch Photos for each Hotel
 function getHotelPhotos(locationID){
+
+    let loader = `<div class="boxLoading"></div>`;
+    document.getElementById('carouselPhotos').innerHTML = loader;
     const data1 = null;
+    const xhr1 = new XMLHttpRequest();
+    xhr1.withCredentials = false;
 
-const xhr1 = new XMLHttpRequest();
-xhr1.withCredentials = false;
+    xhr1.addEventListener("readystatechange", function () {
+        if (this.readyState === this.DONE) {
+            console.log(this.responseText);
+            let respObj1 = JSON.parse(xhr1.response);
+            console.log(respObj1);
 
-xhr1.addEventListener("readystatechange", function () {
-	if (this.readyState === this.DONE) {
-		console.log(this.responseText);
-        let respObj1 = JSON.parse(xhr1.response);
-        console.log(respObj1);
-
-        let hotelPhotosList = new Array();
-        respObj1.data.forEach((element) =>{            
-            let eachHotelPhoto = {                 
-                photos: element.images.large.url
-            };
-            hotelPhotosList.push(eachHotelPhoto);
-                   
-        });       
-        createHotelPhotos(hotelPhotosList);
-	}
+            let hotelPhotosList = new Array();
+            respObj1.data.forEach((element) =>{            
+                let eachHotelPhoto = {                 
+                    photos: element.images.large.url
+                };
+                hotelPhotosList.push(eachHotelPhoto);
+                    
+            });       
+            createHotelPhotos(hotelPhotosList);
+        }
 });
 
 xhr1.open("GET", "https://travel-advisor.p.rapidapi.com/photos/list?location_id="+locationID+"&currency=USD&limit=50&lang=en_US");
 xhr1.setRequestHeader("x-rapidapi-host", "travel-advisor.p.rapidapi.com");
-xhr1.setRequestHeader("x-rapidapi-key", "cb317dd6bcmsheb95c2514d30caap1faf14jsn492d361686e4");
+xhr1.setRequestHeader("x-rapidapi-key", "54820a3f8bmsh6eb73e1468a61b6p16d82fjsncd7f5423e63f");
 
 xhr1.send(data1);
 }

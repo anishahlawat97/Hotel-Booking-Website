@@ -87,8 +87,8 @@ button{
     justify-content: center;
     align-items: center;
     height: 350px;  
-    width: 1000px; 
-    /* margin-right: 5% */
+    width: 1050px; 
+    /* margi75right: 5% */
 }
 
 .btn-success{
@@ -235,7 +235,7 @@ footer section{
     
     nav{        
         position: absolute;
-        top:1px;        
+        top:10%;        
         font-weight: bold;
     }
 
@@ -269,7 +269,7 @@ footer section{
     }
 
     .slider_img{        
-        width: 100%;
+        width: 300px;
         margin: 2px 2px 2px 2px;
     }
 
@@ -338,7 +338,7 @@ footer section{
     }
 
     .slider_img{        
-        width: 100%;
+        width: 700px;
         margin: 2px 2px 2px 2px;
     }
 
@@ -406,7 +406,7 @@ footer section{
     }
 
     .slider_img{        
-        width: 100%;
+        width: 900px;
         margin: 2px 2px 2px 2px;
     }
 
